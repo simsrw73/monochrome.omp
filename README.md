@@ -1,4 +1,4 @@
-# Simple - An Oh My Posh theme for Powershell
+# Monochrome - An Oh My Posh theme for Powershell
 
 ![Preview](images/screenshot.png)
 
@@ -12,14 +12,14 @@
 
 2. Install a [Nerd Font](https://www.nerdfonts.com/font-downloads) and configure your terminal to use the installed Nerd Font
 
-3. Download `Simple.omp.json` to your `$HOME` directory.
+3. Download `monochrome.omp.json` to your `$HOME` directory.
 
 4. Create or edit your powershell profile ($PROFILE) and add these lines:
 
 ```powershell
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme  ~/simple.omp.json
+Set-PoshPrompt -Theme  ~/monichrome.omp.json
 ```
 
 5. Restart your terminal
