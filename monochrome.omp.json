@@ -3,7 +3,7 @@
   "final_space": true,
   "console_title": true,
   "console_title_style": "template",
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "console_title_template": "{{if .Root}}# {{end}}{{ .Shell }} in {{ .Folder }}",
   "blocks": [
     {
       "type": "prompt",
@@ -129,6 +129,17 @@
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#00AA00> ● {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> ● {{ .Working.String }}</>{{ end }}"
+          }
+        },
+        {
+          "type": "root",
+          "style": "plain",
+          "foreground": "#cccccc",
+          "background": "transparent",
+          "properties": {
+            "root_icon": "<yellow>#</>",
+            "prefix": "[ ",
+            "postfix": " ]"
           }
         },
         {
