@@ -98,7 +98,7 @@
           "trailing_diamond": "\uE0B4",
           "properties": {
             "always_enabled": true,
-            "template": "\uE23A"
+            "template": "{{ if gt .Code 0 }}\uf256{{ else }}\ue23a{{ end }}"
           }
         }
       ]
